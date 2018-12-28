@@ -1,0 +1,383 @@
+html,
+body {
+    height: 100%;
+    min-width: 1024px;
+    border: 0;
+    margin: 0;
+    padding: 0 !important;
+}
+
+html {
+    overflow: hidden;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    height: 100%;
+    width: 100%;
+    /* margin-top: 60px; */
+}
+
+/*css 初始化 */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img,
+input,
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+/*去掉input等聚焦时的蓝色边框*/
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select,
+input {
+    vertical-align: middle;
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #fff;
+}
+
+.clearfix:before,
+.clearfix:after {
+    /*清楚浮动*/
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #c81623 !important;
+}
+
+/*公共类*/
+
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.positionRe {
+    position: relative;
+}
+
+.fullWidthHeight {
+    height: 100%;
+    width: 100%;
+}
+
+// element ui 默认样式瞎改
+.el-dialog,
+.el-dialog__header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.el-dialog__header {
+    background: #f3f3f3; //#819494
+    padding: 20px 20px 10px;
+    text-align: left;
+    color: #66668b;
+    font-weight: bold;
+}
+
+.el-dialog__footer {
+    border: 1px solid #ddd;
+}
+
+.el-dialog__headerbtn .el-dialog__close {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.el-form-item {
+    margin: 22px 0 0 0;
+}
+
+.el-form-item__label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.el-dialog__body {
+    padding-top: 0;
+}
+
+.el-button--success {
+    background-color: rgba(48, 199, 161, 1);
+    border-color: rgba(48, 199, 161, 1);
+}
+
+.el-icon-destry {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/destry.png) no-repeat center;
+}
+
+.el-table {
+    font-size: 13px;
+}
+
+.el-table th {
+    text-align: center;
+    font-size: 13px;
+}
+
+// 预览图框
+.bigImgDialog {
+    .el-dialog__headerbtn {
+        top: 5px;
+        right: 5px;
+        >i {
+            color: #e34;
+        }
+    }
+    .el-dialog__body {
+        padding: 10px;
+        img {
+            width: 480px;
+            height: 500px;
+        }
+    }
+}
+
+.breadButton {
+    border: 1px solid #31c7a0;
+    color: #31c7a0;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers*/
+    color: #999;
+    font-size: 14px;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18*/
+    color: #999;
+    font-size: 14px;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+*/
+    color: #999;
+    font-size: 14px;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+*/
+    color: #999;
+    font-size: 14px;
+}
+
+.el-table td {
+    // padding: 5px 0;
+    text-align: center !important;
+}
+
+.content {
+    height: 100%;
+    .breadButtons {
+        .activeButton {
+            border-color: #2fc7a0;
+            color: #2fc7a0;
+        }
+        .el-button.is-plain:focus,
+        .el-button.is-plain:hover {
+            border-color: #2fc7a0;
+            color: #2fc7a0;
+        }
+    }
+    .textButton {
+        color: #2fc7a0;
+    }
+    .togglePageRow {
+        background: #f3f3f3;
+        padding: 5px 0;
+    }
+    .el-table th {
+        color: #000;
+        background-color: #f3f3f3f3;
+        border-right: 1px solid #d5d5d5;
+        border-left: 1px solid #d5d5d5;
+        border-bottom: 1px solid #d5d5d5;
+    }
+    .el-button.is-disabled {
+        color: #c0c4cc;
+    }
+}
+
+.searchContent {
+    background: #f3f3f3;
+    border: 1px solid #d7d7d7;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    .el-form-item {
+        margin: 0 0 0 0;
+    }
+    .el-form-item__content {
+        text-align: left;
+    }
+    .el-input {
+        width: 200px;
+    }
+    .searchContentInput {
+        .el-input {
+            width: 200px !important;
+        }
+    }
+    .el-button.is-plain:focus,
+    .el-button.is-plain:hover {
+        background-color: #2fc7a0;
+        color: #fff;
+    }
+    .el-button.is-plain {
+        border-color: #2fc7a0;
+        color: #2fc7a0;
+    }
+}
